@@ -1,0 +1,62 @@
+[
+  {
+      "id": 1,
+      "textenglish": "What is Tally used for?",
+      "texthindi": "टैली का उपयोग किस लिए किया जाता है?",
+      "options": [
+          "Accounting",
+          "Programming",
+          "Designing",
+          "Marketing"
+      ],
+      "correctAnswer": "Accounting"
+  },
+  {
+      "id": 2,
+      "textenglish": "Which shortcut key is used to open the company in Tally?",
+      "texthindi": "टैली में कंपनी खोलने के लिए किस शॉर्टकट कुंजी का उपयोग किया जाता है?",
+      "options": [
+          "Alt + F1",
+          "Alt + F2",
+          "Alt + F3",
+          "Alt + F4"
+      ],
+      "correctAnswer": "Alt + F3"
+  },
+  {
+      "id": 3,
+      "textenglish": "Which menu option is used to create a new ledger in Tally?",
+      "texthindi": "टैली में नई खाता पुस्तिका बनाने के लिए किस मेनू विकल्प का उपयोग किया जाता है?",
+      "options": [
+          "Accounts Info",
+          "Inventory Info",
+          "Display",
+          "Quit"
+      ],
+      "correctAnswer": "Accounts Info"
+  },
+  {
+      "id": 4,
+      "textenglish": "How do you activate GST in Tally?",
+      "texthindi": "टैली में जीएसटी को कैसे सक्रिय करें?",
+      "options": [
+          "F11: Features > Statutory & Taxation",
+          "F12: Configuration > Statutory",
+          "F10: Inventory > GST",
+          "F4: Inventory > Statutory"
+      ],
+      "correctAnswer": "F11: Features > Statutory & Taxation"
+  },
+  {
+      "id": 5,
+      "textenglish": "What is the shortcut key for payment voucher in Tally?",
+      "texthindi": "टैली में भुगतान वाउचर के लिए शॉर्टकट कुंजी क्या है?",
+      "options": [
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+      ],
+      "correctAnswer": "F5"
+  }
+]
