@@ -98,7 +98,7 @@ const Mocktest2 = () => {
           </div>
           <div>score : {score}</div>
 
-          <p> Website is Created by Lalit Kumar </p>
+          <p className="developerName"> Website is Created by Lalit Kumar </p>
         </div>
       )}
     </div>
