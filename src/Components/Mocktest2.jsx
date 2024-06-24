@@ -97,6 +97,8 @@ const Mocktest2 = () => {
             </button>
           </div>
           <div>score : {score}</div>
+
+          <p> Website is Created by Lalit Kumar </p>
         </div>
       )}
     </div>
