@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Mocktest.css";
 import questions from "../assets/mocktest.json";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 const Mocktest2 = () => {
   const [currentquestion, setCurrentquestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [mode, setMode] = useState("dark");
 
   const handleansweroptionclick = (option) => {
     setSelectedAnswer(option);
@@ -36,8 +38,29 @@ const Mocktest2 = () => {
     setSelectedAnswer(null);
   };
 
+  const ChangeMode = () => {
+    if (mode === "dark") {
+      setMode("light");
+      // console.log("dark mode");
+    } else {
+      setMode("dark");
+      // console.log("light mode");
+    }
+  };
+
   return (
-    <div className="app">
+    <div className={`app ${mode==='dark'?"dark":''}`}>
+      <div className="header">
+        <h1 className={mode==='dark'?"dark":''}>  
+          Mock Test 1
+        </h1>
+        <p>
+        {mode==="dark"?<>
+         <MdLightMode size={30} onClick={ChangeMode} /></>:
+        <MdDarkMode onClick={ChangeMode} size={30}/>
+      }
+      </p>
+      </div>
       {showScore ? (
         <>
           <div className="score-section">
@@ -51,7 +74,6 @@ const Mocktest2 = () => {
         </>
       ) : (
         <div className="question-section">
-          <h1>Mock Test 1 </h1>
           <div className="question-count">
             <span>Question {currentquestion + 1}</span>/ {questions.length}
           </div>
@@ -69,7 +91,7 @@ const Mocktest2 = () => {
                     style={{ width: "18px", height: "18px" }}
                     name="option"
                     checked={selectedAnswer === option}
-                    onChange={()=>handleansweroptionclick(option)}
+                    onChange={() => handleansweroptionclick(option)}
                   />
                   <button
                     onClick={() => handleansweroptionclick(option)}
