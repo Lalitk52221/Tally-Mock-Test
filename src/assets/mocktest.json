@@ -47,27 +47,69 @@
       "correctAnswer": "Source of documents analysed and record"
   },
   {
-      "id": 5,
-      "textenglish": "How do you activate GST in Tally?",
-      "texthindi": "टैली में जीएसटी को कैसे सक्रिय करें?",
+      "id": 6,
+      "textenglish": "From the following options select the correct Method of depreciation?",
+      "texthindi": "निम्नलिखित विकल्पों में से मूल्यह्रास की सही विधि का चयन करें?",
       "options": [
-          "F11: Features > Statutory & Taxation",
-          "F12: Configuration > Statutory",
-          "F10: Inventory > GST",
-          "F4: Inventory > Statutory"
+          "Decrease depreciation",
+          "Fixed Depreciation",
+          "Extent depreciation",
+          "Annuity Depreciation"
       ],
-      "correctAnswer": "F11: Features > Statutory & Taxation"
+      "correctAnswer": "Annuity Depreciation"
   },
   {
-      "id": 5,
-      "textenglish": "What is the shortcut key for payment voucher in Tally?",
-      "texthindi": "टैली में भुगतान वाउचर के लिए शॉर्टकट कुंजी क्या है?",
+      "id": 7,
+      "textenglish": "In a newly created company, there are two pre-defined stock items in Tally Prime?",
+      "texthindi": "एक नव निर्मित कंपनी में, टैली प्राइम में दो पूर्व-निर्धारित स्टॉक आइटम हैं?",
       "options": [
-          "F5",
-          "F6",
-          "F7",
-          "F8"
+          "False",
+          "True"
       ],
-      "correctAnswer": "F5"
+      "correctAnswer": "False"
+  },
+  {
+      "id": 8,
+      "textenglish": "Assets, Liabilities, Transactions, and Capital are not the accounting terminologies of the business.",
+      "texthindi": "परिसंपत्तियां, देयताएं, लेन-देन और पूंजी व्यवसाय की लेखांकन शब्दावली नहीं हैं।",
+      "options": [
+          "False",
+          "True"
+      ],
+      "correctAnswer": "False"
+  },
+  {
+      "id": 9,
+      "textenglish": "What is the correct navigation path to view the chart of Accounts in Tally Prime?",
+      "texthindi": "टैली प्राइम में खातों का चार्ट देखने के लिए सही नेविगेशन पथ क्या है?",
+      "options": [
+          "Gateway of Tally> Chart of Accounts",
+          "Gateway of Tally> Create > Charts of Accounts",
+          "Gateway of Tally> Alter > Chart of Accounts",
+          "Gateway of Tally> Display More Reports > Chart of Accounts"
+      ],
+      "correctAnswer": "Gateway of Tally> Chart of Accounts"
+  },
+  {
+      "id": 10,
+      "textenglish": "In TallyPrime, Which of the following option is a 'Profit & Loss A/c' items?",
+      "texthindi": "टैलीप्राइम में, निम्नलिखित में से कौन सा विकल्प 'लाभ और हानि खाता' आइटम है?",
+      "options": [
+          "Direct Expense",
+          "Current Assets",
+          "Fixed Assets",
+          "Capital Account"
+      ],
+      "correctAnswer": "Direct Expense"
+  },
+  {
+      "id": 11,
+      "textenglish": "To create Multiple Ledgers in Tally Prime, the navigation path is from Gateway of tally > create> Ledger.",
+      "texthindi": "टैली प्राइम में एकाधिक लेजर बनाने के लिए, नेविगेशन पथ गेटवे ऑफ टैली > क्रिएट > लेजर है।",
+      "options": [
+          "False",
+          "True"
+      ],
+      "correctAnswer": "False"
   }
 ]
