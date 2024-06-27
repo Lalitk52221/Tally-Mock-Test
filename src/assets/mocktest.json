@@ -1,42 +1,53 @@
 [
   {
       "id": 1,
-      "textenglish": "What is Tally used for?",
-      "texthindi": "टैली का उपयोग किस लिए किया जाता है?",
+      "textenglish": "In Tally Prime, under list of Masters which of the following master will not appear under the head Inventory Masters?",
+      "texthindi": "टैली प्राइम में, मास्टर्स की सूची के अंतर्गत, निम्नलिखित में से कौन सा मास्टर इन्वेंटरी मास्टर्स शीर्षक के अंतर्गत नहीं दिखाई देगा?",
       "options": [
-          "Accounting",
-          "Programming",
-          "Designing",
-          "Marketing"
+          "Godown",
+          "Stock Item",
+          "Stock Group",
+          "Group"
       ],
-      "correctAnswer": "Accounting"
+      "correctAnswer": "Group"
   },
   {
       "id": 2,
-      "textenglish": "Which shortcut key is used to open the company in Tally?",
-      "texthindi": "टैली में कंपनी खोलने के लिए किस शॉर्टकट कुंजी का उपयोग किया जाता है?",
+      "textenglish": "As per the accounting rule whic of the following account wil come under the debit side of the Trail Balance?",
+      "texthindi": "लेखांकन नियम के अनुसार निम्नलिखित में से कौन सा खाता ट्रेल बैलेंस के डेबिट पक्ष के अंतर्गत आएगा?",
       "options": [
-          "Alt + F1",
-          "Alt + F2",
-          "Alt + F3",
-          "Alt + F4"
+          "Drawings",
+          "Sales",
+          "Interest Received",
+          "Creditors"
       ],
-      "correctAnswer": "Alt + F3"
+      "correctAnswer": "Drawings"
   },
   {
       "id": 3,
-      "textenglish": "Which menu option is used to create a new ledger in Tally?",
-      "texthindi": "टैली में नई खाता पुस्तिका बनाने के लिए किस मेनू विकल्प का उपयोग किया जाता है?",
+      "textenglish": "As per the golder rules of accounting, the receiving aspect of the trasaction is known as 'Debit'.",
+      "texthindi": "लेखांकन के स्वर्णिम नियमों के अनुसार, लेनदेन के प्राप्ति पहलू को 'डेबिट' के रूप में जाना जाता है।",
       "options": [
-          "Accounts Info",
-          "Inventory Info",
-          "Display",
-          "Quit"
+          "False",
+          "True"
+         
       ],
-      "correctAnswer": "Accounts Info"
+      "correctAnswer": "True"
   },
   {
       "id": 4,
+      "textenglish": "In the accounting stystem,_______ is known as the book of original entry for journalising the trasactions.",
+      "texthindi": "लेखांकन प्रणाली में,_____ को लेनदेन को जर्नलाइज़ करने के लिए मूल प्रविष्टि की पुस्तक के रूप में जाना जाता है।",
+      "options": [
+          "Source of Voucher Analysed and reported",
+          "Source of documents analysed and record",
+          "source of Voucher analysed and recorded",
+          "Source of documents analysed and reported"
+      ],
+      "correctAnswer": "Source of documents analysed and record"
+  },
+  {
+      "id": 5,
       "textenglish": "How do you activate GST in Tally?",
       "texthindi": "टैली में जीएसटी को कैसे सक्रिय करें?",
       "options": [

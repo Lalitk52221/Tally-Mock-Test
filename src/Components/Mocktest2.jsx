@@ -2,13 +2,14 @@ import { useState } from "react";
 import "./Mocktest.css";
 import questions from "../assets/mocktest.json";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
+import TallyPrimelogo from '../assets/TallyPrime.png'
 
 const Mocktest2 = () => {
   const [currentquestion, setCurrentquestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
 
   const handleansweroptionclick = (option) => {
     setSelectedAnswer(option);
@@ -51,6 +52,7 @@ const Mocktest2 = () => {
   return (
     <div className={`app ${mode==='dark'?"dark":''}`}>
       <div className="header">
+        <img src={TallyPrimelogo} width={60} alt="" />
         <h1 className={mode==='dark'?"dark":''}>  
           Mock Test 1
         </h1>
@@ -120,7 +122,7 @@ const Mocktest2 = () => {
           </div>
           <div>score : {score}</div>
 
-          <p className="developerName"> Website is Created by Lalit Kumar </p>
+          <p className="developerName"> Website Created by Lalit Kumar </p>
         </div>
       )}
     </div>
