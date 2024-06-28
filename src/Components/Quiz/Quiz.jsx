@@ -1,7 +1,7 @@
-
 import { useRef, useState } from "react";
 import "./Quiz.css";
 import quizData from "../../assets/data";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 const Quiz = () => {
   let [index, setIndex] = useState(0);
@@ -9,6 +9,12 @@ const Quiz = () => {
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
   let [result, setResult] = useState(false);
+  let [mode, setMode] = useState("light");
+
+  const togglemode = () => {
+    setMode(mode === "light" ? "dark" : "light");
+    console.log({ mode });
+  };
 
   let Option1 = useRef(null);
   let Option2 = useRef(null);
@@ -57,9 +63,18 @@ const Quiz = () => {
   };
 
   return (
-    <div className="container">
-      <h1>Mock Test 1</h1>
-      <hr />
+    <div className={`container ${mode === "light" ? "darkmode" : "lightmode"}`}>
+      <div className="header">
+        <h1 className={` ${mode === "light" ? "darkmode" : ""}`}>
+          Tally Mock Test 1
+        </h1>
+        {mode === "dark" ? (
+          <MdDarkMode onClick={togglemode} size={30} />
+        ) : (
+          <MdLightMode size={30} onClick={togglemode} />
+        )}
+      </div>
+      {/* <hr /> */}
       {result ? (
         <>
           <h2>
