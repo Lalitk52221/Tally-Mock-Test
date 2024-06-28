@@ -1,3 +1,4 @@
+
 import { useRef, useState } from "react";
 import "./Quiz.css";
 import quizData from "../../assets/data";
@@ -36,35 +37,42 @@ const Quiz = () => {
         setResult(true);
         return 0;
       }
-      setIndex(++index);
-      setQuestion(quizData[index]);
+      setIndex(index + 1);
+      setQuestion(quizData[index + 1]);
       setLock(false);
       array_options.forEach((option) => {
-        option.current.classList.remove("correct", "wrong");
+        if (option.current) {
+          option.current.classList.remove("correct", "wrong");
+        }
       });
     }
   };
 
-  const reset = ()=>{
-    setIndex(0)
-    setQuestion(quizData[0])
-    setLock(false)
-    setScore(0)
-    setResult(false)
-  }
+  const reset = () => {
+    setIndex(0);
+    setQuestion(quizData[0]);
+    setLock(false);
+    setScore(0);
+    setResult(false);
+  };
 
   return (
     <div className="container">
-      <h1>Mock Test</h1>
+      <h1>Mock Test 1</h1>
       <hr />
       {result ? (
-        <><h2>You Scored {score} out of {quizData.length}</h2>
-      <button onClick={reset}>Reset</button> </>
+        <>
+          <h2>
+            You Scored {score} out of {quizData.length}
+          </h2>
+          <button onClick={reset}>Reset</button>
+        </>
       ) : (
         <>
           <h2>
-            {index + 1}. {question.question}
+            {index + 1}. {question.engquestion}
           </h2>
+          {/* <h2>{question.hindiquestion}</h2> */}
           <ul>
             <li ref={Option1} onClick={(e) => checkans(e, 1)}>
               {question.option1}
@@ -72,13 +80,16 @@ const Quiz = () => {
             <li ref={Option2} onClick={(e) => checkans(e, 2)}>
               {question.option2}
             </li>
-            
-            <li ref={Option3} onClick={(e) => checkans(e, 3)}>
-              {question.option3}
-            </li>
-            <li ref={Option4} onClick={(e) => checkans(e, 4)}>
-              {question.option4}
-            </li>
+            {question.option3 && (
+              <li ref={Option3} onClick={(e) => checkans(e, 3)}>
+                {question.option3}
+              </li>
+            )}
+            {question.option4 && (
+              <li ref={Option4} onClick={(e) => checkans(e, 4)}>
+                {question.option4}
+              </li>
+            )}
           </ul>
           <button onClick={next}>Next</button>
           <div className="index">
@@ -88,10 +99,8 @@ const Quiz = () => {
           <div>score: {score}</div>
         </>
       )}
-      
     </div>
   );
 };
 
 export default Quiz;
-
